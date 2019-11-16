@@ -7,48 +7,58 @@ class Problem:
     def __init__(self, fh):
         # Place here your code to load problem from opened file object fh
         # and use probability.BayesNet() to create the Bayesian network
-        pass
+        R, C, S, P, M = self.load_file(fh)
+        print('Rooms', '\n', R, '\n')
+        print('Connections', '\n', C, '\n')
+        print('Sensors', '\n', S, '\n')
+        print('Probability', '\n', P, '\n')
+        print('Measurement', '\n', M, '\n')
 
     def solve(self):
         # Place here your code to determine the maximum likelihood solution
         # returning the solution room name and likelihood
         # use probability.elimination_ask() to perform probabilistic inference
-        return (room, likelihood)
+        #return (room, likelihood)
+        return
 
-    def load_file(f):
+    def load_file(self, f):
         R = []
         C = []
         S = {}
         P = 0
         M = []
 
-        '''
         for line in f.readlines():
             splitted = line.split()
             if not splitted:
                 continue
 
             code = splitted[0]
-            arg = splitted[1:]
+            args = splitted[1:]
 
-            if code == 'A':
-                d = {'start': arg[1], 'end': arg[2]}
-                A[arg[0]] = d
+            if code == 'R':
+                R.extend(args)
 
             elif code == 'C':
-                C[arg[0]] = arg[1]
+                C.extend([elem.split(',') for elem in args])
+
+            elif code == 'S':
+                for sensor in args:
+                    data = sensor.split(':')
+                    S[data[0]] = {'room': data[1], 'TPR': float(data[2]), 'FPR': float(data[3])}
 
             elif code == 'P':
-                d = {"airplane": arg[0], "class": arg[1]}
-                P.append(d)
+                P = float(args[0])
 
-            elif code == 'L':
-                d = {"dep": arg[0], "arr": arg[1], "dl": arg[2]}
-                d.update({ arg[i]: float(arg[i+1]) for i in range(3, len(arg), 2) })
-                L.append(d)
+            elif code == 'M':
+                measurement = [{'sensor': sensor[0], 'measurement': str2bool(sensor[1])} for sensor in [elem.split(':') for elem in args]]
+                M.append(measurement)
 
-        return A, C, P, L
-        '''
+            else:
+                print("Unrecognized line:", line)
+
+        return R, C, S, P, M
+
 
 def solver(input_file):
     return Problem(input_file).solve()
@@ -60,6 +70,15 @@ def read_argv():
         exit(0)
     else:
         return argv[1]
+
+def str2bool(string):
+    """Converts a string to a boolean
+
+    Parameters:
+    -----------
+    string : string
+    """
+    return string.lower() in ("yes", "y", "true", "t", "1")
 
 
 if __name__ == '__main__':
