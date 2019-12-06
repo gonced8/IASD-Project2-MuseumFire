@@ -1,0 +1,243 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-us" dir="ltr">
+<head><meta name="GENERATOR" content="Microsoft SharePoint" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Expires" content="0" /><meta http-equiv="X-UA-Compatible" content="IE=8"/><meta name="ROBOTS" content="NOHTMLINDEX" /><title>
+	
+	Error
+
+</title><link id="CssLink-5c014ecea0b24ff0b592f5cdec4054ee" rel="stylesheet" type="text/css" href="/_layouts/15/1033/styles/corev15.css?rev=x1CgmQ4tDkmtLHp8dxPL6g%3D%3DTAG849"/>
+<link id="CssLink-f4f0d2186fbc4e4ea67820409d3eefad" rel="stylesheet" type="text/css" href="/_layouts/15/1033/styles/error.css?rev=%2F3%2F1Ql%2FSCnyuBJ%2B%2FM9tFhg%3D%3DTAG849"/>
+<style id="SPThemeHideForms" type="text/css">body {opacity:0 !important}</style><script type="text/javascript">// <![CDATA[ 
+
+var _initGlobalSnapShot = {};try {    if (Object.keys(_initGlobalSnapShot).length == 0) {       for (var memberIndex in window) {          if (Boolean(memberIndex)) {              _initGlobalSnapShot[memberIndex] = 1;         }      }   }} catch (ex) {};
+// ]]>
+</script>
+<script type="text/javascript">// <![CDATA[ 
+
+var g_SPOffSwitches={"20A02119-EE30-4A87-8FDB-A31DE27A4E52":1,"A046D4EA-D445-4426-8A94-F3F738D91D8E":1,"30654ADF-2F4F-424C-B0F8-91F39E813EE8":1,"E9789901-37C3-4134-83D8-AA76385710B5":1,"6F740AD5-47AA-451D-B9B6-05BA306B32ED":1,"FFDE5ED0-382B-4ECA-8263-4E16026FDC45":1,"100E20CE-9C2F-4E00-9308-4071348BD723":1,"411F7EF9-C165-45DB-B054-7A4692612643":1,"A8E3EF67-B9EB-4A49-9D9C-4C451ED7607F":1,"BC951C7A-0BF6-4D4A-A78A-01C2EE61B874":1,"BF770A3F-32CE-426E-98CB-1E0457B824D1":1,"78A35633-837E-4344-AC43-AA4A93F94F4F":1,"A3FC13AA-5DE2-4A0E-ACD8-A81E23EBA917":1,"B698E412-F93A-4E18-ACE7-FA17A88375EE":1,"D20FE699-A03B-4FBC-8392-A84FB17788EA":1,"1B79CC1A-E0C6-4DE8-959F-EC9EAEEB3D2D":1,"4FE0344A-6F84-494B-AB80-CDA687905D53":1,"72F57673-BF75-44BB-8049-CC8A79B020E7":1,"D0B933D0-A3AB-478D-AF0E-9A9BDDC0E250":1,"FCA58864-3303-4AE8-A441-F0BC1A390284":1,"FCAEC82E-A42F-456C-AB93-E6A3C4024CB3":1,"0A89A18D-3A4E-40E0-8D65-ABDC1321E7D6":1,"0BD6A981-7F6B-48E8-B58F-5FD4A7070B2C":1,"F014A7C0-AECA-4029-BAA7-DC29D6EF4142":1,"9C221C90-A931-4036-A0FB-D7F9CED272F6":1,"55F23D33-4558-4A46-92DD-35431CADFA9B":1,"1930108A-8C81-4FC0-80E5-44CA4FDF121B":1,"39C4EAE8-2A67-45AF-9BEF-62F5CDEF6155":1,"7EAE0ACA-6D4A-4DC4-892B-758C5AD9A2FC":1,"AEA74ECD-C8C0-40ED-881B-1968D8710463":1,"B739F87F-E7EC-4F89-8D54-66DA43EF3F78":1,"9F994CC1-E596-44B3-988C-0D552DB86AE8":1,"644C9F8F-2415-4F43-8F91-8711E58242CC":1,"8B245EE3-19A7-4EFC-B638-CB908C3F95F2":1,"08D627D4-70A2-414F-946F-2F13DCDC41C9":1,"1E0CCFED-1974-4E44-AC92-9449C222E4A0":1,"03C3F8BF-1C2C-4490-BB63-E443CAF66F8A":1,"63702B36-D1BC-492C-95AF-026F990FD0DE":1,"30827A13-8F1C-47E4-A6D2-402E17956949":1,"36A5FC94-6ECF-435A-ABE5-671F47946EE8":1,"ACFA2436-C803-424A-A7F0-FFF505F29F5C":1,"9EE432C5-F3C3-462E-91A7-9364E9ACD4B0":1,"25652E85-1113-4786-AD61-568E75D5F224":1,"1489A9C7-7B7A-41D4-9B30-911E012FAFE4":1,"E3A95ED9-A209-41E1-851B-CFDFA531CC72":1,"11E472C5-31F5-4FD3-9ED6-037A12A736CC":1,"395055AC-8599-4D74-A936-34D686333D03":1,"B8B3035D-54BF-4F3E-A9A6-164D08586F44":1,"92CE82BC-BA2E-4D44-AAA6-A30EF36653C7":1,"C02E92D9-A794-4776-8079-6CE5367EDB73":1,"6CAB3596-FD36-4B50-A353-DA21C000F76E":1,"BB568AF1-FECB-45AE-8035-6F4E1163489B":1,"05E30554-E13F-496D-813B-CA354FFEDEFC":1,"EF211C1F-02EE-4DF7-8B7C-005A594FE1DD":1,"1BD03AD4-7195-4F1A-99CB-C59E6D234879":1,"C84D265E-161F-4663-9CDA-1411BC82384D":1,"11C9F02E-9EB8-49DE-BE83-9898D5334457":1,"1391A96B-7AEB-4878-8581-E6DF5CC644CF":1,"76C4DADF-7FBE-4007-B931-DDA541DD7E24":1,"2CCECF8E-CE9F-4D8C-AA84-38761A1486F9":1,"8C282E36-1485-4AAF-A2E7-48D358CB3649":1,"80E579E4-FAC5-43CA-BEE9-C95A39ABB674":1,"12C77157-EE11-4B2E-9260-AE282FC9B0CB":1,"4FF50FD4-CFCE-41DC-97B9-9D1DBA1B241F":1,"0F965900-B322-42DA-AA29-E0EBDFD045A5":1,"D6EACE9F-21A7-42DB-BBF7-6928CC41EC43":1,"4BCCE1D5-9E97-46A4-9E80-F44C2B0252B6":1,"00DF68DF-E386-4220-9719-C4247403ACC0":1,"F78B580F-A5B6-41AF-B42D-8AD8193F5208":1,"AEA2E1AA-3BB7-4F18-879A-E10F7CAE0328":1,"0111401E-2388-43FB-8B46-42A0FDD1AF3A":1,"925090C8-8AA6-4C6A-8BFE-1EF2E43038F0":1,"FF87249F-F4AD-4B05-9BA4-53AA1D50BE34":1,"1EB24789-43EA-4149-AF00-D62B497C2647":1,"AE78C1A6-ABF1-458E-AFB0-B3C90ADDAC24":1,"D6F32D6D-92DE-42B0-A77B-4087E73FF4C2":1,"21DB8E4A-9B71-475B-9C50-D9EDCD466563":1,"FD8639CE-8356-42E8-93C6-52FA8B2E107E":1,"605B2EB2-0508-43C0-AC1C-418FDA920BB5":1,"4F21995E-BFE8-4A12-9847-4B2C6B1C9DC9":1,"F2171C72-63BC-4E73-83CC-CB5308EA9BCE":1,"08147840-A493-4840-BF1A-2A11941F68EB":1,"369E10F7-E2CE-4310-9AF5-DFB3E1D7BD95":1,"6BB9EC49-4379-4278-BBD0-07DC05277792":1,"8BBAE817-2447-4787-B296-2DB23BBA6A9A":1,"033A2586-60C0-46D9-8D3B-7CD0A562889B":1,"0AE1F13D-7540-4FB1-869F-59D73ED63C76":1,"A3A3EEAA-247A-4557-ABA6-E3BBAC844F09":1,"9C31D626-C5B9-4EF8-83AA-7C94132846F0":1,"A9F593E2-4A8F-420F-9352-67DC153CA031":1,"B0C82CE3-36F4-4D8A-9452-134180591DE3":1,"B99D6903-4835-41CA-B101-130639B98A78":1,"9ED5AEC6-A48F-45F6-8AC3-18C5194C6092":1,"D77378FF-917D-44CF-A980-0EAF478E6464":1,"7122BA2D-E9D3-413F-A58F-3C55636BA22A":1,"69E23215-1C6B-45AE-B498-915B2900A28E":1,"08AB6E8C-F88B-4CB5-B84F-8393F07EA145":1,"D5DFED84-6F97-4E38-B4E4-8E5A1D1FB380":1,"6961F15C-5EF7-4BF4-AE70-701D3ABEC21C":1,"D679B1B9-892D-4F73-AD75-51BC7AE495D0":1,"D0628454-E65F-40E7-A806-2D80FD529383":1,"498F1030-78D1-4DA6-93BA-AD83F9B88790":1,"81D149E2-0FEB-41E9-ADCC-DF83C2356D06":1,"29E1CCAA-1A0F-4772-9C40-2E1F39D75C6C":1,"CB1858D4-9D30-414A-B12E-F66476B90BC7":1,"60667AAA-9A50-4DD0-95E4-3FC38E9F2815":1,"96C5488B-0019-471F-A88B-9174A6B501B0":1,"8DAEFF70-CBAE-4FAF-B84C-044CF1670FAE":1,"FF90AFE6-9906-4FD0-8358-BDBD55EB57C4":1,"9CA312BF-A1EF-4749-AA96-5C3C42FFC0E7":1,"2B25A461-4ADE-467B-82DF-D5583FCA87BD":1,"8CC307DB-3841-4AA0-B86C-95192E904DC2":1,"1B7D9806-CE5D-4496-A984-E6EC6840CE82":1,"E15D451C-709D-4D3B-86C7-B630734E3A7B":1,"1BF67675-0337-4A7E-AA11-7444B5D44F18":1,"FBBF5EEF-B958-4EB8-9EEE-8535163A8F27":1,"97B9DB96-E5DD-4B58-9A75-B0E4B79280ED":1,"C9B07F85-CA87-4B1B-AB3E-9DDB5BD35738":1,"A16ADCAA-BDAF-4DF2-A9AE-74C959301F79":1,"FBE65E5B-6E06-4B99-9494-2142A2FBA11B":1,"4600C3C6-36DE-494A-B081-34C79D8071C0":1,"1040154B-F71A-4B03-A198-C2EFA896A0DE":1,"B4A009BA-2B46-4258-B848-65C834FA1637":1,"92BC9121-E6B1-4D96-A277-BA39B85CC558":1,"E37972FB-8B68-474E-A809-616002FE1FFD":1,"A7918383-CFAE-42CB-B660-E7717CBD7DA6":1,"18110EB8-1E6D-40A1-B167-33482218D5EF":1,"197381A1-43D8-407D-8871-907D3FA7922B":1,"28F3604F-7242-48BF-BD6B-663C8D07A364":1,"8D7DE8AE-F3EC-4564-ADE2-8EB15F0DD391":1,"682D97B2-A81C-45D8-AECB-EBE382BB0E6A":1,"2E0CD78E-663F-4803-A340-F24D2BFEFA8E":1,"9058F4D5-FA5A-44FD-BA2E-84A10987E2FD":1,"0FB423F0-0261-4D61-ACCE-C330624CE536":1,"803FACDB-FB25-4FBA-82D1-819E18B8477B":1,"88DB2950-E1C0-4927-8146-3E0855DB3A09":1,"2CB2BC6C-6ECE-4156-B1EB-55CA8C9B81EA":1,"42BFAB24-521A-4696-90A7-93A70C03F0C9":1,"3487BA96-793D-453F-AA6E-5252E0D81ED6":1,"80F2E241-EED0-4E06-A55C-45D1844DC9A9":1,"9292D136-533C-4871-A7A2-FE3AD6BAA7A0":1,"4BCD8F2C-B63C-4E7B-8FBF-579092567170":1,"2BC73EA5-E788-4449-A093-E3431DF302CA":1,"76BD8E77-FB23-4E98-BEF6-66C00CFAF82F":1,"1BF2CD4B-502E-4C5D-8561-10B598572D9A":1,"22FD03A7-912E-4CA1-AD16-1421E85A5391":1,"703E63BB-48BD-4891-B88B-EC71C64B997E":1,"8ABCA8E6-C976-40BF-A2AA-155E73390601":1,"7BC9D93D-46F2-4FAA-A26A-BE67CFB5A8A2":1,"761DAE33-801E-4D39-951B-973104D4D75F":1,"6AAFF384-F587-446A-B0D0-1455A72BDBF3":1,"A07D611B-E450-4203-AB53-3CA5900B0268":1,"70711F0E-688C-4BA9-A843-C3B84DB630DF":1,"B783FBE2-5F13-4257-8040-353A43B47C23":1,"6F6E7C9C-7EC2-4B13-8835-2C296AECC4EE":1,"B887B83F-2C90-4A2C-929F-4134FAB51769":1,"DC9B06D2-9315-445F-89D5-E03DB2BB574B":1,"53280EE0-4C89-4752-B9E1-1D079C6D70B3":1,"CF7FDE8C-E861-4154-B123-7710617CF597":1,"7AC1140A-586F-4012-BA8C-27ACBDF3C7D4":1,"4C95B62B-7146-464E-A5D7-355C380081F0":1};
+// ]]>
+</script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.19506.12023/1033/initstrings.js"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.19506.12023/init.js"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.19506.12023/theming.js"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=QIGEM4ceKrcUQWkudPjJZCs-rUQZnIWpUnUQpiN1RFGiAssv4feKCBkP-NHj9ZSIx4lG0Ny5ER3Hdv9IU_L0XLM7EUmhoE22LiRzwPFiyieBvSBq3C5o1vblST2etxQHwsHciZBFoFeoxBV_pNJy_X8uYgtYz3UeFWUxJ1ZalPgg-vqeaHz-1C1vst-b8Pgn0&amp;t=ffffffffa580202a"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.19506.12023/blank.js"></script>
+<script type="text/javascript">RegisterSod("require.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19506.12023\u002frequire.js");</script>
+<script type="text/javascript">RegisterSod("strings.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19506.12023\u002f1033\u002fstrings.js");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19506.12023\u002f1033\u002fsp.res.js");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19506.12023\u002fsp.runtime.js");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19506.12023\u002fsp.js");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.init.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19506.12023\u002fsp.init.js");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19506.12023\u002fsp.ui.dialog.js");RegisterSodDep("sp.ui.dialog.js", "sp.init.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19506.12023\u002fcore.js");RegisterSodDep("core.js", "strings.js");</script>
+<script type="text/javascript">RegisterSod("foldhyperlink.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19506.12023\u002ffoldhyperlink.js");</script>
+
+	<meta name="Robots" content="NOINDEX " />
+	<meta name="SharePointError" content="0" />
+<link rel="shortcut icon" href="/_layouts/15/images/favicon.ico?rev=47" type="image/vnd.microsoft.icon" /></head>
+<body id="ms-error-body" onload="if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();">
+	<form method="post" action="../../../../_layouts/15/error.aspx?UniqueId=b81d7fef-6256-4a7c-b118-3d2d8401a82a&amp;Translate=false&amp;tempauth=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvdWxpc2JvYS1teS5zaGFyZXBvaW50LmNvbUAwYmZhODUwMC1iMWYyLTQ1NjYtYmFmMS02ZjU5MzcwODkzZTciLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNTc0MzMxNDEyIiwiZXhwIjoiMTU3NDMzNTAxMiIsImVuZHBvaW50dXJsIjoiRU1pRkpTTytsblMxUVBrSDc5WkREcUphcmN1SnptOW0zbXB0Z0Z1RVhQTT0iLCJlbmRwb2ludHVybExlbmd0aCI6IjE1OSIsImlzbG9vcGJhY2siOiJUcnVlIiwiY2lkIjoiWXpZM09URXdORE10T1RGa1lTMDBaR1k0TFRrelpqVXRZVFJtTVdNd04ySXpZbUZqIiwidmVyIjoiaGFzaGVkcHJvb2Z0b2tlbiIsInNpdGVpZCI6Ill6SXhNR00wWVRVdFpEWTJPQzAwWVRFd0xXSmxaRFl0TlRjMVptTmpaV1F4WlRSayIsImFwcF9kaXNwbGF5bmFtZSI6Ik9uZURyaXZlIGlPUyBBcHAiLCJnaXZlbl9uYW1lIjoiR29uw6dhbG8gRWR1YXJkbyIsImZhbWlseV9uYW1lIjoiQ2FzY2FsaG8gUmFwb3NvIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfGlzdDQyNDk4NUB0ZWNuaWNvLnVsaXNib2EucHQiLCJuaWkiOiJtaWNyb3NvZnQuc2hhcmVwb2ludCIsImlzdXNlciI6InRydWUiLCJjYWNoZWtleSI6IjBoLmZ8bWVtYmVyc2hpcHwxMDAzMDAwMDk0MzM2ZGU3QGxpdmUuY29tIiwic2hhcmluZ2lkIjoiNGJhYzFmM2YtZjQxNC00NjQ2LThlZDYtMzc0ZGExZjZjNGQ3IiwidHQiOiIwIiwidXNlUGVyc2lzdGVudENvb2tpZSI6bnVsbH0.TW45V2o1RFd3QkRmNTFBTTNEcXVvRFF3WWMyeWFDeVZNNWMybitjU1RqRT0&amp;ApiVersion=2.1" id="aspnetForm" onsubmit="if (typeof(_spFormOnSubmitWrapper) != &#39;undefined&#39;) {return _spFormOnSubmitWrapper();} else {return true;}">
+<input type="hidden" name="SideBySideToken" id="SideBySideToken" value="16.0.19506.12023" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA5OTM2NDI5Nw9kFgJmD2QWAgIBD2QWAgIDD2QWAgIJD2QWAgIBD2QWBAIDDw8WAh4HVmlzaWJsZWhkZAIHD2QWAgIBDw8WAh4XTGlua1RpdGxlV2hlbkZvbGRDbG9zZWQFEVRlY2huaWNhbCBEZXRhaWxzZBYGZg9kFgICAQ8PZBYCHgdvbmNsaWNrBcgBRW5zdXJlU2NyaXB0UGFyYW1zKCdmb2xkaHlwZXJsaW5rLmpzJywgJ1RvZ2dsZUZvbGRUZXh0JywgJ2QxZjliOWNiMDFjZTQ3YTE4ZDEwMTE0Yjc3M2IyYzBkJywgJ2N0bDAwX1BsYWNlSG9sZGVyTWFpbl9Gb2xkTGlua19fbW9yZURldGFpbHNMaW5rJywgJ1RlY2huaWNhbCBEZXRhaWxzJywgJ1RlY2huaWNhbCBEZXRhaWxzJyk7O3JldHVybiBmYWxzZTsWAgIBDw8WAh4EVGV4dAURVGVjaG5pY2FsIERldGFpbHMWBB4EaHJlZgUBIx8CBRtQcmV2ZW50RGVmYXVsdE5hdmlnYXRpb24oKTtkAgcPDxYCHwBoZGQCDQ8PFgIfAwUkRGF0ZSBhbmQgVGltZTogMTEvMjEvMjAxOSAyOjE2OjUyIEFNZGRkyhH2pSVOBqWQfZbx+VziLPyCD2kE/gU2TSqkE5+px4w=" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+
+var g_correlationId = '00000000-0000-0000-0000-000000000000';
+var g_wsaQoSEnabled = false;
+var g_wsaQoSDataPoints = [];
+var g_wsaRUMEnabled = true;var g_wsaLCID = 1033;
+var g_wsaListTemplateId = 700;
+var g_wsaSiteTemplateId = 'SPSPERS#10';
+var _spPageContextInfo={"webServerRelativeUrl":"/personal/ist424985_tecnico_ulisboa_pt","webAbsoluteUrl":"https://ulisboa-my.sharepoint.com/personal/ist424985_tecnico_ulisboa_pt","viewId":"","webPropertyFlags2":0,"listId":"{47ecb10f-0efc-4673-85fc-ea30d3921ebd}","listPermsMask":{"High":2147483647,"Low":4294967295},"listUrl":"/personal/ist424985_tecnico_ulisboa_pt/Documents","listTitle":"Documents","listBaseTemplate":700,"listBaseType":1,"driveInfo":{},"multiGeoInfo":[],"viewOnlyExperienceEnabled":false,"blockDownloadsExperienceEnabled":false,"idleSessionSignOutEnabled":false,"isUnauthorizedTenant":false,"cdnPrefix":"static.sharepointonline.com/bld","siteAbsoluteUrl":"https://ulisboa-my.sharepoint.com/personal/ist424985_tecnico_ulisboa_pt","siteId":"{c210c4a5-d668-4a10-bed6-575fcced1e4d}","showNGSCDialogForSyncOnTS":false,"supportPoundStorePath":true,"supportPercentStorePath":true,"siteSubscriptionId":"0bfa8500-b1f2-4566-baf1-6f59370893e7","tenantDisplayName":"Universidade de Lisboa","isMultiGeoTenant":false,"isMultiGeoODBMode":false,"webDomain":"sharepoint.com","IsIEDisabledForItemsScope":false,"isSPO":true,"farmLabel":"EMEA_52_Content","contentDBName":"DedicatedContent_707111","serverRequestPath":"/personal/ist424985_tecnico_ulisboa_pt/_layouts/15/download.aspx","layoutsUrl":"_layouts/15","webId":"{5b6bafc4-a977-49fc-8d01-e6fadc4841d6}","webTitle":"Gonçalo Eduardo Cascalho Raposo","webTemplate":"21","webTemplateConfiguration":"SPSPERS#10","webDescription":"Esta é a área pessoal de Gonçalo Eduardo Cascalho Raposo. Pode utilizar esta área para criar listas e bibliotecas de documentos para armazenar, organizar e partilhar informações com outras pessoas.","tenantAppVersion":"0","isAppWeb":false,"webLogoUrl":"_layouts/15/images/siteicon.png","webLanguage":2070,"webLanguageName":"pt-PT","currentLanguage":1033,"currentUICultureName":"en-US","currentCultureName":"en-US","currentCultureLCID":1033,"env":"prod","env2":"prod","nid":10494,"fid":19691,"serverTime":"2019-11-21T10:16:52.4393497Z","siteClientTag":"0$$16.0.19506.12023","crossDomainPhotosEnabled":true,"openInClient":false,"webUIVersion":15,"webPermMasks":{"High":2147483647,"Low":4294967295},"pageListId":"{47ecb10f-0efc-4673-85fc-ea30d3921ebd}","pageItemId":-1,"pagePermsMask":null,"pagePersonalizationScope":1,"userEmail":"","userId":3,"userLoginName":"ist424985@tecnico.ulisboa.pt","userDisplayName":"Gonçalo Eduardo Cascalho Raposo","isAnonymousGuestUser":false,"isEmailAuthenticationGuestUser":false,"isExternalGuestUser":false,"systemUserKey":"i:0h.f|membership|1003000094336de7@live.com","alertsEnabled":true,"siteServerRelativeUrl":"/personal/ist424985_tecnico_ulisboa_pt","allowSilverlightPrompt":"True","themeCacheToken":"/personal/ist424985_tecnico_ulisboa_pt::1:16.0.19506.12023","themedCssFolderUrl":null,"themedImageFileNames":null,"modernThemingEnabled":true,"isSiteAdmin":true,"isSiteOwner":true,"ExpFeatures":[-836783100,1893006153,620878037,1199517726,867936057,-1796973904,1288360502,57945375,273241126,-720240640,87445392,-2138906472,67451592,545980736,2159493,1879738388,1443119474,830086336,20206087,32,0,1212153856,-1347067977,-2080757274,-1806289405,-533232124,-48658406,-936371879,-998240655,518588493,1270043536,192,268435456,1268512164,1570776951,-55818019,-1206605232,116200717,-672298302,662520626,560529158,1658518968,273762382,-959833792,1141442060,1080546420,-123320139,-788522136,184762952,-1528876510,1344864684,-2046803967,35717632,2294784,0,0,0,0],"experimentData":"AAAAAAAmEmIpAmACAHGA","experimentDataLookup":[],"killSwitches":{"20A02119-EE30-4A87-8FDB-A31DE27A4E52":true,"A046D4EA-D445-4426-8A94-F3F738D91D8E":true,"30654ADF-2F4F-424C-B0F8-91F39E813EE8":true,"E9789901-37C3-4134-83D8-AA76385710B5":true,"6F740AD5-47AA-451D-B9B6-05BA306B32ED":true,"FFDE5ED0-382B-4ECA-8263-4E16026FDC45":true,"100E20CE-9C2F-4E00-9308-4071348BD723":true,"411F7EF9-C165-45DB-B054-7A4692612643":true,"A8E3EF67-B9EB-4A49-9D9C-4C451ED7607F":true,"BC951C7A-0BF6-4D4A-A78A-01C2EE61B874":true,"BF770A3F-32CE-426E-98CB-1E0457B824D1":true,"78A35633-837E-4344-AC43-AA4A93F94F4F":true,"A3FC13AA-5DE2-4A0E-ACD8-A81E23EBA917":true,"B698E412-F93A-4E18-ACE7-FA17A88375EE":true,"D20FE699-A03B-4FBC-8392-A84FB17788EA":true,"1B79CC1A-E0C6-4DE8-959F-EC9EAEEB3D2D":true,"4FE0344A-6F84-494B-AB80-CDA687905D53":true,"72F57673-BF75-44BB-8049-CC8A79B020E7":true,"D0B933D0-A3AB-478D-AF0E-9A9BDDC0E250":true,"FCA58864-3303-4AE8-A441-F0BC1A390284":true,"FCAEC82E-A42F-456C-AB93-E6A3C4024CB3":true,"0A89A18D-3A4E-40E0-8D65-ABDC1321E7D6":true,"0BD6A981-7F6B-48E8-B58F-5FD4A7070B2C":true,"F014A7C0-AECA-4029-BAA7-DC29D6EF4142":true,"9C221C90-A931-4036-A0FB-D7F9CED272F6":true,"55F23D33-4558-4A46-92DD-35431CADFA9B":true,"1930108A-8C81-4FC0-80E5-44CA4FDF121B":true,"39C4EAE8-2A67-45AF-9BEF-62F5CDEF6155":true,"7EAE0ACA-6D4A-4DC4-892B-758C5AD9A2FC":true,"AEA74ECD-C8C0-40ED-881B-1968D8710463":true,"B739F87F-E7EC-4F89-8D54-66DA43EF3F78":true,"9F994CC1-E596-44B3-988C-0D552DB86AE8":true,"644C9F8F-2415-4F43-8F91-8711E58242CC":true,"8B245EE3-19A7-4EFC-B638-CB908C3F95F2":true,"08D627D4-70A2-414F-946F-2F13DCDC41C9":true,"1E0CCFED-1974-4E44-AC92-9449C222E4A0":true,"03C3F8BF-1C2C-4490-BB63-E443CAF66F8A":true,"63702B36-D1BC-492C-95AF-026F990FD0DE":true,"30827A13-8F1C-47E4-A6D2-402E17956949":true,"36A5FC94-6ECF-435A-ABE5-671F47946EE8":true,"ACFA2436-C803-424A-A7F0-FFF505F29F5C":true,"9EE432C5-F3C3-462E-91A7-9364E9ACD4B0":true,"25652E85-1113-4786-AD61-568E75D5F224":true,"1489A9C7-7B7A-41D4-9B30-911E012FAFE4":true,"E3A95ED9-A209-41E1-851B-CFDFA531CC72":true,"11E472C5-31F5-4FD3-9ED6-037A12A736CC":true,"395055AC-8599-4D74-A936-34D686333D03":true,"B8B3035D-54BF-4F3E-A9A6-164D08586F44":true,"92CE82BC-BA2E-4D44-AAA6-A30EF36653C7":true,"C02E92D9-A794-4776-8079-6CE5367EDB73":true,"6CAB3596-FD36-4B50-A353-DA21C000F76E":true,"BB568AF1-FECB-45AE-8035-6F4E1163489B":true,"05E30554-E13F-496D-813B-CA354FFEDEFC":true,"EF211C1F-02EE-4DF7-8B7C-005A594FE1DD":true,"1BD03AD4-7195-4F1A-99CB-C59E6D234879":true,"C84D265E-161F-4663-9CDA-1411BC82384D":true,"11C9F02E-9EB8-49DE-BE83-9898D5334457":true,"1391A96B-7AEB-4878-8581-E6DF5CC644CF":true,"76C4DADF-7FBE-4007-B931-DDA541DD7E24":true,"2CCECF8E-CE9F-4D8C-AA84-38761A1486F9":true,"8C282E36-1485-4AAF-A2E7-48D358CB3649":true,"80E579E4-FAC5-43CA-BEE9-C95A39ABB674":true,"12C77157-EE11-4B2E-9260-AE282FC9B0CB":true,"4FF50FD4-CFCE-41DC-97B9-9D1DBA1B241F":true,"0F965900-B322-42DA-AA29-E0EBDFD045A5":true,"D6EACE9F-21A7-42DB-BBF7-6928CC41EC43":true,"4BCCE1D5-9E97-46A4-9E80-F44C2B0252B6":true,"00DF68DF-E386-4220-9719-C4247403ACC0":true,"F78B580F-A5B6-41AF-B42D-8AD8193F5208":true,"AEA2E1AA-3BB7-4F18-879A-E10F7CAE0328":true,"0111401E-2388-43FB-8B46-42A0FDD1AF3A":true,"925090C8-8AA6-4C6A-8BFE-1EF2E43038F0":true,"FF87249F-F4AD-4B05-9BA4-53AA1D50BE34":true,"1EB24789-43EA-4149-AF00-D62B497C2647":true,"AE78C1A6-ABF1-458E-AFB0-B3C90ADDAC24":true,"D6F32D6D-92DE-42B0-A77B-4087E73FF4C2":true,"21DB8E4A-9B71-475B-9C50-D9EDCD466563":true,"FD8639CE-8356-42E8-93C6-52FA8B2E107E":true,"605B2EB2-0508-43C0-AC1C-418FDA920BB5":true,"4F21995E-BFE8-4A12-9847-4B2C6B1C9DC9":true,"F2171C72-63BC-4E73-83CC-CB5308EA9BCE":true,"08147840-A493-4840-BF1A-2A11941F68EB":true,"369E10F7-E2CE-4310-9AF5-DFB3E1D7BD95":true,"6BB9EC49-4379-4278-BBD0-07DC05277792":true,"8BBAE817-2447-4787-B296-2DB23BBA6A9A":true,"033A2586-60C0-46D9-8D3B-7CD0A562889B":true,"0AE1F13D-7540-4FB1-869F-59D73ED63C76":true,"A3A3EEAA-247A-4557-ABA6-E3BBAC844F09":true,"9C31D626-C5B9-4EF8-83AA-7C94132846F0":true,"A9F593E2-4A8F-420F-9352-67DC153CA031":true,"B0C82CE3-36F4-4D8A-9452-134180591DE3":true,"B99D6903-4835-41CA-B101-130639B98A78":true,"9ED5AEC6-A48F-45F6-8AC3-18C5194C6092":true,"D77378FF-917D-44CF-A980-0EAF478E6464":true,"7122BA2D-E9D3-413F-A58F-3C55636BA22A":true,"69E23215-1C6B-45AE-B498-915B2900A28E":true,"08AB6E8C-F88B-4CB5-B84F-8393F07EA145":true,"D5DFED84-6F97-4E38-B4E4-8E5A1D1FB380":true,"6961F15C-5EF7-4BF4-AE70-701D3ABEC21C":true,"D679B1B9-892D-4F73-AD75-51BC7AE495D0":true,"D0628454-E65F-40E7-A806-2D80FD529383":true,"498F1030-78D1-4DA6-93BA-AD83F9B88790":true,"81D149E2-0FEB-41E9-ADCC-DF83C2356D06":true,"29E1CCAA-1A0F-4772-9C40-2E1F39D75C6C":true,"CB1858D4-9D30-414A-B12E-F66476B90BC7":true,"60667AAA-9A50-4DD0-95E4-3FC38E9F2815":true,"96C5488B-0019-471F-A88B-9174A6B501B0":true,"8DAEFF70-CBAE-4FAF-B84C-044CF1670FAE":true,"FF90AFE6-9906-4FD0-8358-BDBD55EB57C4":true,"9CA312BF-A1EF-4749-AA96-5C3C42FFC0E7":true,"2B25A461-4ADE-467B-82DF-D5583FCA87BD":true,"8CC307DB-3841-4AA0-B86C-95192E904DC2":true,"1B7D9806-CE5D-4496-A984-E6EC6840CE82":true,"E15D451C-709D-4D3B-86C7-B630734E3A7B":true,"1BF67675-0337-4A7E-AA11-7444B5D44F18":true,"FBBF5EEF-B958-4EB8-9EEE-8535163A8F27":true,"97B9DB96-E5DD-4B58-9A75-B0E4B79280ED":true,"C9B07F85-CA87-4B1B-AB3E-9DDB5BD35738":true,"A16ADCAA-BDAF-4DF2-A9AE-74C959301F79":true,"FBE65E5B-6E06-4B99-9494-2142A2FBA11B":true,"4600C3C6-36DE-494A-B081-34C79D8071C0":true,"1040154B-F71A-4B03-A198-C2EFA896A0DE":true,"B4A009BA-2B46-4258-B848-65C834FA1637":true,"92BC9121-E6B1-4D96-A277-BA39B85CC558":true,"E37972FB-8B68-474E-A809-616002FE1FFD":true,"A7918383-CFAE-42CB-B660-E7717CBD7DA6":true,"18110EB8-1E6D-40A1-B167-33482218D5EF":true,"197381A1-43D8-407D-8871-907D3FA7922B":true,"28F3604F-7242-48BF-BD6B-663C8D07A364":true,"8D7DE8AE-F3EC-4564-ADE2-8EB15F0DD391":true,"682D97B2-A81C-45D8-AECB-EBE382BB0E6A":true,"2E0CD78E-663F-4803-A340-F24D2BFEFA8E":true,"9058F4D5-FA5A-44FD-BA2E-84A10987E2FD":true,"0FB423F0-0261-4D61-ACCE-C330624CE536":true,"803FACDB-FB25-4FBA-82D1-819E18B8477B":true,"88DB2950-E1C0-4927-8146-3E0855DB3A09":true,"2CB2BC6C-6ECE-4156-B1EB-55CA8C9B81EA":true,"42BFAB24-521A-4696-90A7-93A70C03F0C9":true,"3487BA96-793D-453F-AA6E-5252E0D81ED6":true,"80F2E241-EED0-4E06-A55C-45D1844DC9A9":true,"9292D136-533C-4871-A7A2-FE3AD6BAA7A0":true,"4BCD8F2C-B63C-4E7B-8FBF-579092567170":true,"2BC73EA5-E788-4449-A093-E3431DF302CA":true,"76BD8E77-FB23-4E98-BEF6-66C00CFAF82F":true,"1BF2CD4B-502E-4C5D-8561-10B598572D9A":true,"22FD03A7-912E-4CA1-AD16-1421E85A5391":true,"703E63BB-48BD-4891-B88B-EC71C64B997E":true,"8ABCA8E6-C976-40BF-A2AA-155E73390601":true,"7BC9D93D-46F2-4FAA-A26A-BE67CFB5A8A2":true,"761DAE33-801E-4D39-951B-973104D4D75F":true,"6AAFF384-F587-446A-B0D0-1455A72BDBF3":true,"A07D611B-E450-4203-AB53-3CA5900B0268":true,"70711F0E-688C-4BA9-A843-C3B84DB630DF":true,"B783FBE2-5F13-4257-8040-353A43B47C23":true,"6F6E7C9C-7EC2-4B13-8835-2C296AECC4EE":true,"B887B83F-2C90-4A2C-929F-4134FAB51769":true,"DC9B06D2-9315-445F-89D5-E03DB2BB574B":true,"53280EE0-4C89-4752-B9E1-1D079C6D70B3":true,"CF7FDE8C-E861-4154-B123-7710617CF597":true,"7AC1140A-586F-4012-BA8C-27ACBDF3C7D4":true,"4C95B62B-7146-464E-A5D7-355C380081F0":true},"CorrelationId":"00000000-0000-0000-0000-000000000000","hasManageWebPermissions":true,"isNoScriptEnabled":true,"groupId":null,"groupHasHomepage":true,"groupHasQuickLaunchConversationsLink":false,"departmentId":null,"hubSiteId":null,"sensitivityLabel":null,"restrictedToRegion":null,"hasPendingWebTemplateExtension":false,"disableRecommendedItems":false,"isGroupRelatedSite":false,"isArchived":false,"IBSegments":null,"hasAutogeneratedWebLogo":true,"isHubSite":false,"isWebWelcomePage":false,"siteClassification":"","hideSyncButtonOnODB":false,"showNGSCDialogForSyncOnODB":false,"sitePagesEnabled":false,"sitePagesFeatureVersion":0,"featureInfo":{"SitePages":{"Version":0,"Enabled":false},"SitePagesResources":{"Version":0,"Enabled":false},"MixedReality":{"Version":0,"Enabled":false},"MixedRealityResources":{"Version":0,"Enabled":false},"RecommendedItems":{"Version":0,"Enabled":false},"MultilingualPages":{"Version":0,"Enabled":false},"MultilingualResources":{"Version":0,"Enabled":false},"Viewers":{"Version":0,"Enabled":false},"SitePagePublishing":{"Version":0,"Enabled":false},"SitePagesScheduling":{"Version":0,"Enabled":false},"SitePagesSchedulingResources":{"Version":0,"Enabled":false}},"DesignPackageId":"00000000-0000-0000-0000-000000000000","groupType":null,"groupColor":"#ca5010","siteColor":"#ca5010","headerEmphasis":0,"headerLayout":0,"searchScope":0,"searchBoxInNavBar":1,"navigationInfo":{"isAudienceTargeted":false,"quickLaunch":[{"Id":1033,"Title":"Recent","Url":"","IsDocLib":false,"IsExternal":false,"ParentId":1025,"ListTemplateType":0,"AudienceIds":null,"Children":[{"Id":2003,"Title":"userActivityFeedHiddenListF4387007-BE61-432F-8BDB-85E6B9679E4B","Url":"/personal/ist424985_tecnico_ulisboa_pt/Lists/userActivityFeedHiddenListF4387007BE61432F8BDB85E6/AllItems.aspx","IsDocLib":false,"IsExternal":false,"ParentId":1033,"ListTemplateType":100,"AudienceIds":null,"Children":[]},{"Id":2002,"Title":"notificationSubscriptionHiddenList6D1E55DA-2564-4A22-A5F9-6C4FCAFF53DE","Url":"/personal/ist424985_tecnico_ulisboa_pt/Lists/notificationSubscriptionHiddenList6D1E55DA25644A22/AllItems.aspx","IsDocLib":false,"IsExternal":false,"ParentId":1033,"ListTemplateType":100,"AudienceIds":null,"Children":[]}]}],"topNav":[]},"clientPersistedCacheKey":{"CurrentKey":{"Key":"RVdqZFYvN1JsNXBSL3pOd2dNQklBMzBHbVRNKzVwOUUrSlREWld2QkVlUT0","Date":"2019-11-02"},"PreviousKey":{"Key":"OUNyRllNS0FoQWlmY3loVmZEVFJ0eGJuQzNGbUNqYVJVN2x5djhuNk9xQT0","Date":"2019-10-03"}},"guestsEnabled":true,"MenuData":{"SettingsData":[{"Id":"SuiteMenu_zz5_MenuItemCreate","Text":"Add an app","Url":"/personal/ist424985_tecnico_ulisboa_pt/_layouts/15/addanapp.aspx"},{"Id":"SuiteMenu_zz6_MenuItem_ViewAllSiteContents","Text":"Site contents","Url":"/personal/ist424985_tecnico_ulisboa_pt/_layouts/15/viewlsts.aspx"},null,{"Id":"SuiteMenu_zz7_MenuItem_Settings","Text":"Site settings","Url":"/personal/ist424985_tecnico_ulisboa_pt/_layouts/15/settings.aspx"}],"SignOutUrl":"https://ulisboa-my.sharepoint.com/personal/ist424985_tecnico_ulisboa_pt/_layouts/15/SignOut.aspx"},"RecycleBinItemCount":-1,"listItemCount":28323,"PublishingFeatureOn":false,"PreviewFeaturesEnabled":true,"disableAppViews":false,"disableFlows":false,"serverRedirectedUrl":null,"formDigestValue":"0x065FD14D48637642B8F183CFD6866CD6262DC3693B21E626EAE5B1AF0FBC356E18F12D07B613D95E1870CFC53AACE5BF9FE576F00E004D4D135D2B4F7C1FA5FA,21 Nov 2019 10:16:52 -0000","IsHomepageModernized":false,"maximumFileSize":15360,"formDigestTimeoutSeconds":1800,"canUserCreateMicrosoftForm":true,"canUserCreateVisioDrawing":true,"readOnlyState":null,"isTenantDevSite":false,"preferUserTimeZone":false,"userTimeZoneData":null,"userTime24":false,"userFirstDayOfWeek":null,"webTimeZoneData":{"Description":"(UTC-08:00) Pacific Time (US and Canada)","Bias":480,"Id":13,"DaylightBias":-60,"DaylightDate":{"Year":0,"Month":3,"DayOfWeek":0,"Day":2,"Hour":2,"Minute":0,"Second":0,"Milliseconds":0},"StandardBias":0,"StandardDate":{"Year":0,"Month":11,"DayOfWeek":0,"Day":1,"Hour":2,"Minute":0,"Second":0,"Milliseconds":0}},"webTime24":true,"webFirstDayOfWeek":0,"aadTenantId":"0bfa8500-b1f2-4566-baf1-6f59370893e7","aadUserId":"e3b50e1e-b4f7-4e9c-a787-b5da87efb219","aadInstanceUrl":"https://login.windows.net","msGraphEndpointUrl":"https://graph.microsoft.com","msMruEndpointUrl":"https://ocws.officeapps.live.com","allowInfectedDownload":true,"organizationNewsSiteReference":[],"companyPortalReference":null,"knowledgeHubSiteDetails":null,"spfx3rdPartyServicePrincipalId":"00000000-0000-0000-0000-000000000000","completenessUrls":null,"socialBarEnabled":true,"substrateOneDriveDisabled":false,"isGroupifyDisabled":false,"Has2019Era":true,"userVoiceForFeedbackEnabled":true,"substrateOneDriveMigrated":true,"userPrincipalName":"ist424985@tecnico.ulisboa.pt","spfxOBOFlowEnabled":false,"publicCdnBaseUrl":"https://publiccdn.sharepointonline.com","farmSettings":{"ExternalService_powerappswebhostname":"web.powerapps.com","ExternalService_powerappscreatehostname":"create.powerapps.com","ExternalService_flowhostname":"flow.microsoft.com","ExternalService_flowservicehostname":"service.flow.microsoft.com","ExternalService_popularplatformsenable":"1","ExternalService_powerappsappshostname":"apps.powerapps.com","ExternalService_powerappsmakehostname":"make.powerapps.com"}};_spPageContextInfo.updateFormDigestPageLoaded=new Date();_spPageContextInfo.clientServerTimeDelta=new Date(_spPageContextInfo.serverTime)-new Date();if(typeof(define)=='function'){define('SPPageContextInfo',[],function(){return _spPageContextInfo;});}Flighting.ExpFeatures = [-836783100,1893006153,620878037,1199517726,867936057,-1796973904,1288360502,57945375,273241126,-720240640,87445392,-2138906472,67451592,545980736,2159493,1879738388,1443119474,830086336,20206087,32,0,1212153856,-1347067977,-2080757274,-1806289405,-533232124,-48658406,-936371879,-998240655,518588493,1270043536,192,268435456,1268512164,1570776951,-55818019,-1206605232,116200717,-672298302,662520626,560529158,1658518968,273762382,-959833792,1141442060,1080546420,-123320139,-788522136,184762952,-1528876510,1344864684,-2046803967,35717632,2294784,0,0,0,0];//]]>
+</script>
+
+<script src="https://static.sharepointonline.com/bld/_layouts/15/16.0.19506.12023/blank.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+window.SPThemeUtils && SPThemeUtils.RegisterCssReferences([{"Url":"\u002f_layouts\u002f15\u002f1033\u002fstyles\u002fcorev15.css?rev=x1CgmQ4tDkmtLHp8dxPL6g\u00253D\u00253DTAG849","OriginalUrl":"\u002f_layouts\u002f15\u002f1033\u002fstyles\u002fcorev15.css?rev=x1CgmQ4tDkmtLHp8dxPL6g\u00253D\u00253DTAG849","Id":"CssLink-5c014ecea0b24ff0b592f5cdec4054ee","ConditionalExpression":"","After":"","RevealToNonIE":"false"},{"Url":"\u002f_layouts\u002f15\u002f1033\u002fstyles\u002ferror.css?rev=\u00252F3\u00252F1Ql\u00252FSCnyuBJ\u00252B\u00252FM9tFhg\u00253D\u00253DTAG849","OriginalUrl":"\u002f_layouts\u002f15\u002f1033\u002fstyles\u002ferror.css?rev=\u00252F3\u00252F1Ql\u00252FSCnyuBJ\u00252B\u00252FM9tFhg\u00253D\u00253DTAG849","Id":"CssLink-f4f0d2186fbc4e4ea67820409d3eefad","ConditionalExpression":"","After":"","RevealToNonIE":"false"}]);
+if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F3F6CE2F" />
+	
+	<div id="ms-error-header" class="ms-pr">
+		<h1 class="ms-core-pageTitle">
+			
+	<div id="ctl00_PlaceHolderPageTitleInTitleArea_ErrorPageTitlePanel">
+	
+	Sorry, something went wrong
+</div>
+
+		</h1>
+		<div>
+			
+		</div>
+	</div>
+	<div id="ms-error">
+		<div id="ms-error-top">
+			
+		</div>
+		<div id="ms-error-content">
+			<div id="ms-error-error-content">
+				<div id="DeltaPlaceHolderMain">
+	
+					
+	
+	
+	<div>
+		<span id="ctl00_PlaceHolderMain_LabelMessage">An unexpected error has occurred.</span>
+	</div>
+	<div id="ctl00_PlaceHolderMain_FoldPanel" class="ms-error-detailsFold">
+		
+		<div id="ctl00_PlaceHolderMain_FoldLink_foldLinkWrapper">
+			
+	<div id="ctl00_PlaceHolderMain_FoldLink_foldLinkPanel" class="ms-foldHyperLink-panel" onclick="EnsureScriptParams(&#39;foldhyperlink.js&#39;, &#39;ToggleFoldText&#39;, &#39;d1f9b9cb01ce47a18d10114b773b2c0d&#39;, &#39;ctl00_PlaceHolderMain_FoldLink__moreDetailsLink&#39;, &#39;Technical Details&#39;, &#39;Technical Details&#39;);;return false;">
+				
+		<a id="ctl00_PlaceHolderMain_FoldLink__moreDetailsLink" class="ms-commandLink ms-floatLeft" href="#" onclick="PreventDefaultNavigation();">Technical Details</a>
+		<div class="ms-clear"></div>
+	
+			</div>
+
+		</div><div class="ms-hide" id="d1f9b9cb01ce47a18d10114b773b2c0d">
+
+			<div>
+				<p>
+					<span class="ms-descriptiontext">
+					
+					</span>
+				</p>
+				<p>
+					<span class="ms-descriptiontext">
+					
+					</span>
+				</p>
+				<p>
+					<span class="ms-descriptiontext">
+						
+						<div id="ctl00_PlaceHolderMain_FoldLink_WSSEndUser_troubleshootingPanel">
+			
+							<span id="ctl00_PlaceHolderMain_FoldLink_helptopic_WSSEndUser_troubleshooting"><a title="Troubleshoot issues with Microsoft SharePoint Foundation. - Opens in new window" href="javascript:HelpWindowKey('WSSEndUser_troubleshooting')">Troubleshoot issues with Microsoft SharePoint Foundation.</a></span>
+						
+		</div>
+					</span>
+				</p>
+				<p>
+					<span id="ctl00_PlaceHolderMain_FoldLink_RequestGuidText" class="ms-metadata"></span>
+				</p>
+				<p>
+					<span id="ctl00_PlaceHolderMain_FoldLink_DateTimeText" class="ms-metadata">Date and Time: 11/21/2019 2:16:52 AM</span>
+				</p>
+			</div>
+		</div>
+	
+	</div>
+	<div class="ms-error-techMsg">
+		<hr />
+	</div>
+	<script type="text/javascript">// <![CDATA[ 
+
+
+		var gearPage = document.getElementById('ms-loading-box');
+		if(null != gearPage)
+		{
+			gearPage.parentNode.removeChild(gearPage);
+			document.title = "Error";
+		}
+		function _spBodyOnLoad()
+		{
+			var intialFocus = (document.getElementById("ctl00_PlaceHolderMain_FoldLink__moreDetailsLink"));
+			try
+			{
+				intialFocus.focus();
+			}
+			catch(ex)
+			{
+			}
+		}
+		function _onmessage(e)
+		{
+			if (e && window.JSON)
+			{
+				var origin = e.origin;
+				var data = e.data;
+				if (window.console && window.console.log)
+				{
+					console.log("ErrorPage.OnMessage: Origin=" + origin + ", Data=" + data);
+				}
+				var requestInfo = JSON.parse(data);
+				if (requestInfo && (requestInfo.command == 'Ping' || requestInfo.command == 'Query'))
+				{
+					var requestGuidElem = (document.getElementById("ctl00_PlaceHolderMain_FoldLink_RequestGuidText"));
+					var responseInfo = {};
+					responseInfo.command = requestInfo.command;
+					responseInfo.postMessageId = requestInfo.postMessageId;
+					responseInfo.responseAvailable = false;
+					responseInfo.errorCode = -1007;
+					var errorMessage;
+					if (requestGuidElem)
+					{
+						errorMessage = requestGuidElem.textContent;
+						if (typeof(errorMessage) == "undefined")
+						{
+							errorMessage = requestGuidElem.innerText;
+						}
+					}
+					if (typeof(errorMessage) == "undefined")
+					{
+						errorMessage = "Error";
+					}
+					responseInfo.errorMessage = errorMessage;
+					if (window.parent && window.parent.postMessage)
+					{
+						data = JSON.stringify(responseInfo);
+						if (window.console && window.console.log)
+						{
+							console.log("ErrorPage.PostMessage: Origin=" + origin + ", Data=" + data);
+						}
+						window.parent.postMessage(data, origin);
+					}
+				}
+			}
+		}
+		if (window.addEventListener) {
+			window.addEventListener('message', _onmessage, false);
+		}
+		else if (window.attachEvent) {
+			window.attachEvent('onmessage', _onmessage);
+		}
+	// ]]>
+</script>
+
+				
+</div>
+			</div>
+			
+				<div id="ms-error-gobackcont" class="ms-calloutLink">
+					<a href="/personal/ist424985_tecnico_ulisboa_pt" class='ms-calloutLink' id="ctl00_PlaceHolderGoBackLink_idSimpleGoBackToHome">Go back to site</a>
+				</div>
+			
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+window.SPThemeUtils && SPThemeUtils.ApplyCurrentTheme(true);var g_MinimalDownload = true;var g_WebServerRelativeUrl = "/personal/ist424985_tecnico_ulisboa_pt";var _spFullDownloadList = ['closeconnection', 'download', 'signout', 'xlviewer', 'wordviewer', 'wordeditor', 'powerpoint', 'powerpointframe', 'onenote', 'visiowebaccess', 'storefront', 'wopiembedframe', 'wopihiddenframe', 'doc', 'wopiframe', 'appredirect', 'wfstart', 'developertools'];
+//]]>
+</script>
+</form>
+</body>
+</html>
+<script type="text/javascript" nonce="b5221433-e297-41c8-8a5b-c2ec0b4395af">
+	var g_duration = -1;
+var g_iisLatency = -1;
+var g_cpuDuration = -1;
+var g_queryCount = -1;
+var g_queryDuration = -1;
+var g_requireJSDone = new Date().getTime();
+</script>
