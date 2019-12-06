@@ -10,6 +10,10 @@ class Problem:
         parents = self.get_parents(R, C)
         cond_prob = self.get_conditional_probabilities(R, P, parents)
 
+        n = len(M)-1
+        self.last_nodes = [room+f'@{n}' for room in R]
+        self.evidence = self.get_evidence(S, M)
+
         # Probability of fire
         P_F = 0.5
         self.bayes_net = self.create_bayes_net(R, S, M, parents, cond_prob, P_F)
@@ -26,8 +30,20 @@ class Problem:
         # Place here your code to determine the maximum likelihood solution
         # returning the solution room name and likelihood
         # use probability.elimination_ask() to perform probabilistic inference
-        room = 'test'
-        likelihood = 0
+        results = {}
+
+        for room in self.last_nodes:
+            results[room] = probability.elimination_ask(room, self.evidence, self.bayes_net)
+
+        print('Results')
+        for room in results:
+            room_name = room.split('@')[0]
+            print(room_name, '\t', results[room].show_approx())
+
+        room = max(results.keys(), key=(lambda room: results[room][True]))
+        likelihood = results[room][True]
+        room = room.split('@')[0]
+
         return (room, likelihood)
 
     def load_file(self, f):
@@ -97,20 +113,29 @@ class Problem:
     
         return cond_prob
 
+    def get_evidence(self, S, M):
+        evidence = {}
+
+        for i, measurements in enumerate(M):
+            for m in measurements:
+                evidence[m['sensor']+f'@{i}'] = m['measurement']
+
+        return evidence
+
     def create_bayes_net(self, R, S, M, parents, cond_prob, P_F):
         bayes_net = probability.BayesNet()
 
         # Initial nodes
         for room in R:
-            bayes_net.add((room+'_0', '', P_F))
+            bayes_net.add((room+'@0', '', P_F))
 
         # Add nodes of following timesteps
         for i in range(1, len(M)):
             # Add rooms nodes
             for room in R:
                 # Getting parents name at step i-1
-                parents_i = [parent+ f'_{i-1}' for parent in parents[room]]
-                bayes_net.add((room, ' '.join(parents_i), cond_prob[room]))
+                parents_i = [parent+f'@{i-1}' for parent in parents[room]]
+                bayes_net.add((room+f'@{i}', ' '.join(parents_i), cond_prob[room]))
                 print((room, ' '.join(parents_i), cond_prob[room]))
 
 
@@ -118,8 +143,8 @@ class Problem:
         for i, measurements in enumerate(M):
             for m in measurements:
                 sensor = m['sensor']
-                bayes_net.add((sensor+f'_{i}', \
-                                S[sensor]['room']+f'_{i}', \
+                bayes_net.add((sensor+f'@{i}', \
+                                S[sensor]['room']+f'@{i}', \
                                 {False: S[sensor]['FPR'], True: S[sensor]['TPR']}))
         
         return bayes_net
@@ -135,6 +160,23 @@ def read_argv():
     else:
         return argv[1]
 
+def get_out_filename(in_filename):
+    """Receives a filename and returns the string "output/filename". Works in every operating system
+    Parameters:
+    -----------
+    in_filename : string
+        Filename to use
+    Returns:
+    --------
+    out_filename : string
+        Filename inside directory output
+    """
+
+    import os.path
+    out_filename = os.path.basename(in_filename)
+    out_filename = os.path.join('output', out_filename)
+    return out_filename
+
 def str2bool(string):
     """Converts a string to a boolean
 
@@ -149,4 +191,10 @@ if __name__ == '__main__':
     in_filename = read_argv()
     
     with open(in_filename, 'r') as f:
-        solver(f)
+        sol = solver(f)
+        print('Solution', '\n', sol)
+
+    out_filename = get_out_filename(in_filename)
+    with open(out_filename, 'w') as f:
+        f.write(f'{sol[0]} {sol[1]}')
+        f.write('\n')
