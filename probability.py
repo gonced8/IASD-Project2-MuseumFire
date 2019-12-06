@@ -369,7 +369,8 @@ class BayesNode:
         return probability(self.p(True, event))
 
     def __repr__(self):
-        return repr((self.variable, ' '.join(self.parents)))
+        #return repr((self.variable, ' '.join(self.parents)))
+        return repr((self.variable, ' '.join(self.parents), self.cpt))
 
 
 # Burglary example [Figure 14.2]
