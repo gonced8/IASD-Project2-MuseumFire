@@ -106,7 +106,7 @@ class Problem:
             table = list(product([False, True], repeat=n))
             
             half = 2**(n-1)
-            prob = [P if i<half else 0 for i in range(len(table))]
+            prob = [P if i<half else 1 for i in range(len(table))]
             prob[0] = 0
 
             cond_prob[room] = dict(zip(table, prob))
