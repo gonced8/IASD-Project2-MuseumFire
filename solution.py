@@ -18,6 +18,7 @@ class Problem:
         P_F = 0.5
         self.bayes_net = self.create_bayes_net(R, S, M, parents, cond_prob, P_F)
 
+        '''
         print('Rooms', '\n', R, '\n')
         print('Connections', '\n', C, '\n')
         print('Sensors', '\n', S, '\n')
@@ -25,6 +26,7 @@ class Problem:
         print('Measurement', '\n', M, '\n')
         print('Connections2', '\n', parents, '\n')
         print('Bayesian Network', '\n', self.bayes_net, '\n');
+        '''
 
     def solve(self):
         # Place here your code to determine the maximum likelihood solution
@@ -35,11 +37,13 @@ class Problem:
         for room in self.last_nodes:
             results[room] = probability.elimination_ask(room, self.evidence, self.bayes_net)
 
+        '''
         print('Results')
         for room in results:
             room_name = room.split('@')[0]
             print(room_name, '\t', results[room].show_approx())
-
+        '''
+        
         room = max(results.keys(), key=(lambda room: results[room][True]))
         likelihood = results[room][True]
         room = room.split('@')[0]
@@ -136,8 +140,6 @@ class Problem:
                 # Getting parents name at step i-1
                 parents_i = [parent+f'@{i-1}' for parent in parents[room]]
                 bayes_net.add((room+f'@{i}', ' '.join(parents_i), cond_prob[room]))
-                print((room, ' '.join(parents_i), cond_prob[room]))
-
 
         # Add measurements nodes
         for i, measurements in enumerate(M):
@@ -154,11 +156,20 @@ def solver(input_file):
 
 def read_argv():
     from sys import argv, exit
-    if len(argv)==1:
-        print(argv[0]+" <input file>")
+    
+    l = len(argv)
+
+    if l==1:
+        print(argv[0]+" <input file> <print>")
         exit(0)
+    elif l==2:
+        show = False
     else:
-        return argv[1]
+        show = str2bool(argv[2])
+
+    in_filename = argv[1]
+
+    return in_filename, show 
 
 def get_out_filename(in_filename):
     """Receives a filename and returns the string "output/filename". Works in every operating system
@@ -188,11 +199,13 @@ def str2bool(string):
 
 
 if __name__ == '__main__':
-    in_filename = read_argv()
+    in_filename, show = read_argv()
     
     with open(in_filename, 'r') as f:
         sol = solver(f)
-        print('Solution', '\n', sol)
+
+        if show:
+            print('Solution', '\n', sol)
 
     out_filename = get_out_filename(in_filename)
     with open(out_filename, 'w') as f:
