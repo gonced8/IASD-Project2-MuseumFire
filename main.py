@@ -16,6 +16,8 @@ class Problem:
 
         # Probability of fire
         P_F = 0.5
+
+        # Create Bayesian Network
         self.bayes_net = self.create_bayes_net(R, S, M, parents, cond_prob, P_F)
 
         '''
@@ -32,11 +34,15 @@ class Problem:
         # Place here your code to determine the maximum likelihood solution
         # returning the solution room name and likelihood
         # use probability.elimination_ask() to perform probabilistic inference
+        '''
         results = {}
 
         for room in self.last_nodes:
             results[room] = probability.elimination_ask(room, self.evidence, self.bayes_net)
+        '''
 
+        results = {room.split('@')[0]: probability.elimination_ask(room, self.evidence, self.bayes_net) for room in self.last_nodes}
+        
         '''
         print('Results')
         for room in results:
@@ -46,7 +52,7 @@ class Problem:
         
         room = max(results.keys(), key=(lambda room: results[room][True]))
         likelihood = results[room][True]
-        room = room.split('@')[0]
+        #room = room.split('@')[0]
 
         return (room, likelihood)
 
@@ -89,10 +95,8 @@ class Problem:
         return R, C, S, P, M
 
     def get_parents(self, R, C):
-        parents = {}
-
-        for room in R:
-            parents[room] = [room]
+        # Initialize dictionary with room and list of connections (first connection is itself)
+        parents = {room: [room] for room in R}
 
         for connection in C:
             parents[connection[0]].append(connection[1])
@@ -103,7 +107,8 @@ class Problem:
     def get_conditional_probabilities(self, R, P, parents):
         from itertools import product
 
-        cond_prob = {}
+        # Initialize dictionary
+        cond_prob = {room: 0 for room in R}
 
         for room in R:
             n = len(parents[room])
@@ -118,11 +123,15 @@ class Problem:
         return cond_prob
 
     def get_evidence(self, S, M):
+        '''
         evidence = {}
-
+        
         for i, measurements in enumerate(M):
             for m in measurements:
                 evidence[m['sensor']+f'@{i}'] = m['measurement']
+        '''
+
+        evidence = {m['sensor']+f'@{i}': m['measurement'] for i, measurements in enumerate(M) for m in measurements}
 
         return evidence
 
@@ -146,8 +155,8 @@ class Problem:
             for m in measurements:
                 sensor = m['sensor']
                 bayes_net.add((sensor+f'@{i}', \
-                                S[sensor]['room']+f'@{i}', \
-                                {False: S[sensor]['FPR'], True: S[sensor]['TPR']}))
+                               S[sensor]['room']+f'@{i}', \
+                               {False: S[sensor]['FPR'], True: S[sensor]['TPR']}))
         
         return bayes_net
 
