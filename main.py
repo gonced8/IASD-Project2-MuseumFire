@@ -2,6 +2,40 @@ import probability
 
 
 class Problem:
+    """A class used to represent the museum fire problem. It used a Baye network and the variable elimination algorithm of the AIMA repository (https://github.com/aimacode/aima-python)
+
+    ...
+
+    Attributes
+    ----------
+    bayes_net : probability.BayesNet
+        A Bayesian network as implemented in the AIMA repository.
+        This network will represent the museum fire problem.
+    evidence: dictionary
+        This dictionary will contain, the measurements/evidences in the format used by the AIMA repository.
+        The keys are the sensor name and time instant and the values are the corresponding measurements.
+    last_nodes: list
+        A list containing the name of the last nodes.
+        This is used when calling the elimination ask for the last nodes (corresponding to the last time instant).
+
+    Methods
+    -------
+    __init__(fh)
+        Initializes the problem using the file object fh. It creates the Bayes network.
+    solve()
+        Returns the solution room name and likelihood.
+    load_file(f)
+        From an open file f, reads each line and processes it, creating the problem input variables.
+    get_parents(R, C).
+        Returns a dictionary where the keys are the rooms names and the values are lists of connections (including a connection with itself). This facilitates the generation of the Bayes network.
+    get_conditional_probabilities(R, P, parents).
+        Returns a dictionary where the keys are the rooms names and the values are dictionaries of a truth table and the conditional probabilities of the rooms nodes. It is used to create the Bayes network.
+    get_evidence(S, M)
+        Returns a dictionary containing the measurements/evidences in the format used in solve().
+    create_bayes_net(R, S, M, parents, cond_prob, P_F)
+        Creates the Bayesian network for the museum fire problem, as implemented in the AIMA repository.
+    """
+
     def __init__(self, fh):
         # Place here your code to load problem from opened file object fh
         # and use probability.BayesNet() to create the Bayesian network
