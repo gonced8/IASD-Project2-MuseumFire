@@ -93,13 +93,8 @@ class Problem:
             The element likelihood is a a float which value is the probablity to be on fire.
         """
         
-        #######################################
-        # PROTECT FOR ROOM NAMES CONTAINING @ #
-        # Check type of variable likelihood   #
-        #######################################
-
         # Calculate the probability of fire for each room in the final time instant. Store the results in a dictionary with the room name and its probability.
-        results = {room.split('@')[0]: probability.elimination_ask(room, self.evidence, self.bayes_net) for room in self.last_nodes}
+        results = {room.rsplit('@', 1)[0]: probability.elimination_ask(room, self.evidence, self.bayes_net) for room in self.last_nodes}
         
         '''
         # Print all the rooms probabilities
@@ -125,10 +120,17 @@ class Problem:
         Returns
         -------
         R : list
-        C : list
-        S : dictionary
+            List containing the room names.
+        C : list of lists
+            List containing the pairs of connections. Each connection is represented by a list of two room names.
+        S : dictionary of dictionaries
+            Dictionary where the keys are the sensors name. The values are dictionaries containing the keys 'room', 'TPR', and 'FPR'.
         P : float
-        M : list
+            Propagation probability
+        M : list of lists of dictionaries
+            Each dictionary is a measurement at a given time instant where the key is the sensor name and the value the measurement.
+            All the measurements of that time (dictionaries) are stored in a list.
+            The lists of measurements at given time instants are stored in a list.
         """
         
         R = []
@@ -145,20 +147,25 @@ class Problem:
             code = splitted[0]
             args = splitted[1:]
 
+            # Room
             if code == 'R':
                 R.extend(args)
-
+            
+            # Connection
             elif code == 'C':
                 C.extend([elem.split(',') for elem in args])
 
+            # Sensor
             elif code == 'S':
                 for sensor in args:
                     data = sensor.split(':')
                     S[data[0]] = {'room': data[1], 'TPR': float(data[2]), 'FPR': float(data[3])}
 
+            # Propagation probability
             elif code == 'P':
                 P = float(args[0])
 
+            # Measurements
             elif code == 'M':
                 measurement = [{'sensor': sensor[0], 'measurement': str2bool(sensor[1])} for sensor in [elem.split(':') for elem in args]]
                 M.append(measurement)
