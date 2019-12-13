@@ -37,16 +37,33 @@ class Problem:
     """
 
     def __init__(self, fh):
-        # Place here your code to load problem from opened file object fh
-        # and use probability.BayesNet() to create the Bayesian network
+        """Reads the opened file object fh and creates a Bayesian network accordingly to the museum fire problem.
+        The Bayesian network with the class probability.BayesNet from the AIMA repository.
+        Initializes the attributes: last_nodes, evidence and bayes_net.
+
+        ...
+
+        Parameters
+        ----------
+        fh : file
+            Opened file object to be used as input for the museum fire problem.
+        """
+
+        # Reads the file and loads its data into variables
         R, C, S, P, M = self.load_file(fh)
 
+        # Get a dictionary containing the parents of each node
         parents = self.get_parents(R, C)
+
+        # Get a dictionary containing the conditional probabilities tables from the room nodes
         cond_prob = self.get_conditional_probabilities(R, P, parents)
 
+        # Get a dictiionary containing the evidence/measurements in the format used by the elimination_ask()
+        self.evidence = self.get_evidence(S, M)
+
+        # Name of the room nodes at the last instant
         n = len(M)-1
         self.last_nodes = [room+f'@{n}' for room in R]
-        self.evidence = self.get_evidence(S, M)
 
         # Probability of fire
         P_F = 0.5
@@ -55,6 +72,7 @@ class Problem:
         self.bayes_net = self.create_bayes_net(R, S, M, parents, cond_prob, P_F)
 
         '''
+        # Print the created variables
         print('Rooms', '\n', R, '\n')
         print('Connections', '\n', C, '\n')
         print('Sensors', '\n', S, '\n')
@@ -65,32 +83,54 @@ class Problem:
         '''
 
     def solve(self):
-        # Place here your code to determine the maximum likelihood solution
-        # returning the solution room name and likelihood
-        # use probability.elimination_ask() to perform probabilistic inference
-        '''
-        results = {}
+        """Solve the museum fire problem, that is, which room at the last time instant is more likely to be on fire.
+        The solution if obtained using the algorithm probability.elimination_ask() from the AIMA repository.
 
-        for room in self.last_nodes:
-            results[room] = probability.elimination_ask(room, self.evidence, self.bayes_net)
-        '''
+        Returns
+        -------
+        (room, likelihood) : tuple
+            The element room is a string containing the room name.
+            The element likelihood is a a float which value is the probablity to be on fire.
+        """
+        
+        #######################################
+        # PROTECT FOR ROOM NAMES CONTAINING @ #
+        # Check type of variable likelihood   #
+        #######################################
 
+        # Calculate the probability of fire for each room in the final time instant. Store the results in a dictionary with the room name and its probability.
         results = {room.split('@')[0]: probability.elimination_ask(room, self.evidence, self.bayes_net) for room in self.last_nodes}
         
         '''
+        # Print all the rooms probabilities
         print('Results')
         for room in results:
-            room_name = room.split('@')[0]
-            print(room_name, '\t', results[room].show_approx())
+            print(room, '\t', results[room].show_approx())
         '''
         
+        # Get the room with maximum probability of fire and its probability
         room = max(results.keys(), key=(lambda room: results[room][True]))
         likelihood = results[room][True]
-        #room = room.split('@')[0]
 
         return (room, likelihood)
 
     def load_file(self, f):
+        """Loads a opened file object fh. This file has the structure given in the project statement.
+
+        Parameters
+        ----------
+        f : file object
+            Opened file object to be used as input for the museum fire problem.
+
+        Returns
+        -------
+        R : list
+        C : list
+        S : dictionary
+        P : float
+        M : list
+        """
+        
         R = []
         C = []
         S = {}
