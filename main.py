@@ -10,6 +10,9 @@ João Bernardino - 83696
 
 import probability
 
+# Flag for algorithm: False = elimination_ask, True = enumeration_ask
+algorithm = False
+
 # Flag for debug prints
 debug = False
 
@@ -113,9 +116,21 @@ class Problem:
         """
         
         # Calculate the probability of fire for each room in the final time instant. Store the results in a dictionary with the room name and its probability.
-        results = {room.rsplit('@', 1)[0]: probability.elimination_ask(room, self.evidence, self.bayes_net) for room in self.last_nodes}
+        if algorithm:
+            algorithm_function = probability.enumeration_ask
+        else:
+            algorithm_function = probability.elimination_ask
+
+        results = {room.rsplit('@', 1)[0]: algorithm_function(room, self.evidence, self.bayes_net) for room in self.last_nodes}
         
         if debug:
+            # Print algorithm name
+            print('Algorithm: ', end='')
+            if algorithm:
+                print('enumeration_ask')
+            else:
+                print('elimination_ask')
+
             # Print all the rooms probabilities
             print('Results')
             for room in results:
@@ -411,23 +426,34 @@ def read_argv():
         Input file name as given thorugh argv.
     show : boolean
         Boolean variable to show to print the result in stdout.
+    algorithm_bool : boolean
+        Boolean variable to choose algorithm
+    debug_bool : boolean
+        Boolean variable to show debug prints
     """
 
     from sys import argv, exit
     
     l = len(argv)
+    show = False
+    algorithm_bool = False
+    debug_bool = False
 
     if l==1:
-        print(argv[0]+" <input file> <print bool>")
+        print(argv[0]+" <input file> <print bool> <algorithm:0=elimination,1=enumeration> <debug>")
         exit(0)
-    elif l==2:
-        show = False
-    else:
+    elif l>=3:
         show = str2bool(argv[2])
+        
+        if l>=4:
+            algorithm_bool = str2bool(argv[3])
+
+            if l>=5:
+                debug_bool = str2bool(argv[4])
 
     in_filename = argv[1]
 
-    return in_filename, show 
+    return in_filename, show, algorithm_bool, debug_bool
 
 def get_out_filename(in_filename):
     """Receives a filename and returns the string "output/<filename>". Works in every operating system
@@ -460,8 +486,8 @@ def str2bool(string):
 
 
 if __name__ == '__main__':
-    # Get input file name and show flag
-    in_filename, show = read_argv()
+    # Get input file name, show flag, and algorithm flag
+    in_filename, show, algorithm, debug = read_argv()
     
     # Open file and solve museum fire problem
     with open(in_filename, 'r') as f:
