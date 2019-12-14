@@ -1,3 +1,13 @@
+"""Artificial Intelligence and Decision Systems (IASD)
+Mini-projects, 2019/2020
+Assignment #2 - The museum is on fire!
+MEAer
+
+André Oliveira  - 83663
+Gonçalo Raposo  - 83682
+João Bernardino - 83696
+"""
+
 import probability
 
 # Flag for debug prints
@@ -28,15 +38,18 @@ class Problem:
         Returns the solution room name and likelihood.
     load_file(f)
         From an open file f, reads each line and processes it, creating the problem input variables.
-    get_parents(R, C).
+    get_parents(R, C)
         Returns a dictionary where the keys are the rooms names and the values are lists of connections (including a connection with itself).
         This facilitates the generation of the Bayes network.
-    get_conditional_probabilities(R, P, parents).
-        Returns a dictionary where the keys are the rooms names and the values are dictionaries of a truth table and the conditional probabilities (of fire propagation) for the rooms nodes.
-        It is used to create the Bayes network.
+    get_conditional_probabilities(R, P, parents)
+        Returns a dictionary where the keys are the rooms names and the values are dictionaries of a truth table and the conditional probabilities
+        (of fire propagation) for the rooms nodes. It is used to create the Bayes network.
+    get_sensor_probabilities(S)
+        Creates a dictionary containing the sensors nodes conditional probabilities of TPR and FPR. 
+        This facilitates the generation of the Bayes network.
     get_evidence(S, M)
         Returns a dictionary containing the measurements/evidences in the format used by elimination_ask().
-    create_bayes_net(R, S, M, parents, cond_prob, P_F)
+    create_bayes_net(R, S, M, parents, cond_prob, sensor_prob, P_F)
         Creates the Bayesian network for the museum fire problem, as implemented in the AIMA repository.
     """
 
@@ -62,6 +75,9 @@ class Problem:
         # Get a dictionary containing the conditional probabilities tables from the room nodes
         cond_prob = self.get_conditional_probabilities(R, P, parents)
 
+        # Get a dictionary containing the conditional probabilities tables from the sensor nodes
+        sensor_prob = self.get_sensor_probabilities(S)
+
         # Get a dictiionary containing the evidence/measurements in the format used by the elimination_ask()
         self.evidence = self.get_evidence(S, M)
 
@@ -73,7 +89,7 @@ class Problem:
         P_F = 0.5
 
         # Create Bayesian Network
-        self.bayes_net = self.create_bayes_net(R, S, M, parents, cond_prob, P_F)
+        self.bayes_net = self.create_bayes_net(R, S, M, parents, cond_prob, sensor_prob, P_F)
 
         if debug:
             # Print the created variables
@@ -250,6 +266,26 @@ class Problem:
     
         return cond_prob
 
+    def get_sensor_probabilities(self, S):
+        """Creates a dictionary containing the sensors nodes conditional probabilities of TPR and FPR. 
+        This is useful when generating the Bayes net because all the sensors nodes have these conditional probabilities.
+
+        Parameters
+        ----------
+        S : dictionary of dictionaries
+            Dictionary where the keys are the sensors names. The values are dictionaries containing the keys 'room', 'TPR', and 'FPR'.
+
+        Returns
+        -------
+        sensor_prob : dictionary of dictinaries
+            A dictionary containing the the conditional probabilities of the sensor nodes.
+            The keys are the sensors' names and the values are another dictionary containing the FPR for False and TPR for True.
+        """
+
+        sensor_prob = {sensor : {False: S[sensor]['FPR'], True: S[sensor]['TPR']} for sensor in S}
+
+        return sensor_prob
+
     def get_evidence(self, S, M):
         """Returns a dictionary containing the measurements/evidences in the format used by elimination_ask().
 
@@ -272,7 +308,7 @@ class Problem:
 
         return evidence
 
-    def create_bayes_net(self, R, S, M, parents, cond_prob, P_F):
+    def create_bayes_net(self, R, S, M, parents, cond_prob, sensor_prob, P_F):
         """Creates the Bayesian network for the museum fire problem, as implemented in the AIMA repository.
         Each node has a unique name, where the time instant is explicited by the ending '@<time instant>'.
         For example, the room 'history' at time instant 0 will have a node named 'history@0'.
@@ -301,6 +337,17 @@ class Problem:
             Each dictionary is a measurement at a given time instant where the key is the sensor name and the value the measurement.
             All the measurements of that time (dictionaries) are stored in a list.
             The lists of measurements at given time instants are stored in a list.
+        parents : dictionary of lists
+            A dictionary containing the parents of each room node. The key is the room name and the value is a lists of its connections plus itself.
+        cond_prob : dictionary of dictinaries
+            A dictionary containing the the conditional probabilities of the room nodes.
+            The keys are the room names and the values are another dictionary containing the conditional probabilities.
+            The keys of this other dictionary are the entries of the truth table as boolean lists and the values are the (conditional) probabilities of that truth table.
+        sensor_prob : dictionary of dictinaries
+            A dictionary containing the the conditional probabilities of the sensor nodes.
+            The keys are the sensors' names and the values are another dictionary containing the FPR for False and TPR for True.
+        P_F : float
+            Fire propagation probability
 
         Returns
         -------
@@ -332,28 +379,46 @@ class Problem:
                 # Sensor name
                 sensor = m['sensor']
 
-                ################################
-                # Create cond prob for sensors #
-                ################################
-
                 # Adding node to the net. Name is the sensor name plus @<time instant>, parent is the room where
                 # it is installed plus @<time instant> and conditional probability corresponds to the FPR and TPR.
-                bayes_net.add((sensor+f'@{i}', \
-                               S[sensor]['room']+f'@{i}', \
-                               {False: S[sensor]['FPR'], True: S[sensor]['TPR']}))
+                bayes_net.add((sensor+f'@{i}', S[sensor]['room']+f'@{i}', sensor_prob[sensor]))
         
         return bayes_net
 
 def solver(input_file):
+    """Solve the museum fire problem given a open input file object.
+
+    Parameters
+    ----------
+    fh : file
+        Opened file object to be used as input for the museum fire problem.
+
+    Returns
+    -------
+    tuple : tuple
+        The first element is a string containing the room name.
+        The second element is a a float which value is the probablity to be on fire.
+    """
+
     return Problem(input_file).solve()
 
 def read_argv():
+    """Processes the arguments given through argv. If the input filename isn't given, the program exits.
+
+    Returns:
+    --------
+    in_filename : string
+        Input file name as given thorugh argv.
+    show : boolean
+        Boolean variable to show to print the result in stdout.
+    """
+
     from sys import argv, exit
     
     l = len(argv)
 
     if l==1:
-        print(argv[0]+" <input file> <print>")
+        print(argv[0]+" <input file> <print bool>")
         exit(0)
     elif l==2:
         show = False
@@ -365,15 +430,17 @@ def read_argv():
     return in_filename, show 
 
 def get_out_filename(in_filename):
-    """Receives a filename and returns the string "output/filename". Works in every operating system
+    """Receives a filename and returns the string "output/<filename>". Works in every operating system
+
     Parameters:
     -----------
     in_filename : string
-        Filename to use
+        Filename to use.
+
     Returns:
     --------
     out_filename : string
-        Filename inside directory output
+        Filename inside directory output.
     """
 
     import os.path
@@ -388,19 +455,27 @@ def str2bool(string):
     -----------
     string : string
     """
+
     return string.lower() in ("yes", "y", "true", "t", "1")
 
 
 if __name__ == '__main__':
+    # Get input file name and show flag
     in_filename, show = read_argv()
     
+    # Open file and solve museum fire problem
     with open(in_filename, 'r') as f:
         sol = solver(f)
 
+        # Print solution
         if show:
             print('Solution', '\n', sol)
 
+    # Get output file name
     out_filename = get_out_filename(in_filename)
+
+    # Open output file and save solution as '<room> <likelihood>'
     with open(out_filename, 'w') as f:
         f.write(f'{sol[0]} {sol[1]}')
         f.write('\n')
+
