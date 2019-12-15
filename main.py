@@ -471,7 +471,10 @@ def get_out_filename(in_filename):
 
     import os.path
     out_filename = os.path.basename(in_filename)
-    out_filename = os.path.join('output', out_filename)
+    if not algorithm:
+        out_filename = os.path.join('output', out_filename)
+    else:
+        out_filename = os.path.join('output2', out_filename)
     return out_filename
 
 def str2bool(string):

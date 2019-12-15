@@ -1,0 +1,24 @@
+P3_1_2.txt ;0.54 ;0.56 ;47616 ;47640
+P3_1_4.txt ;0.58 ;0.81 ;47624 ;47648
+P3_1_8.txt ;0.63 ;gtimeout: sending signal TERM to command ‘gtime’ ;47780 ;gtimeout: sending signal TERM to command ‘gtime’
+P3_3_2.txt ;0.58 ;0.60 ;47652 ;47584
+P3_3_4.txt ;0.60 ;0.97 ;47600 ;47720
+P3_3_8.txt ;0.59 ;gtimeout: sending signal TERM to command ‘gtime’ ;47616 ;gtimeout: sending signal TERM to command ‘gtime’
+P4_1_2.txt ;0.55 ;0.59 ;47564 ;47528
+P4_1_4.txt ;0.60 ;6.35 ;47616 ;47728
+P4_1_8.txt ;0.60 ;gtimeout: sending signal TERM to command ‘gtime’ ;47604 ;gtimeout: sending signal TERM to command ‘gtime’
+P4_3_2.txt ;0.56 ;0.53 ;47512 ;47668
+P4_3_4.txt ;0.54 ;10.58 ;47680 ;47732
+P5_1_2.txt ;0.58 ;0.59 ;47616 ;47636
+P5_1_8.txt ;0.64 ;gtimeout: sending signal TERM to command ‘gtime’ ;47680 ;gtimeout: sending signal TERM to command ‘gtime’
+P5_3_2.txt ;0.67 ;0.60 ;47760 ;47580
+P5_3_4.txt ;0.59 ;gtimeout: sending signal TERM to command ‘gtime’ ;47668 ;gtimeout: sending signal TERM to command ‘gtime’
+P5_5_2.txt ;0.57 ;0.70 ;47672 ;47572
+P5_5_4.txt ;0.55 ;gtimeout: sending signal TERM to command ‘gtime’ ;47660 ;gtimeout: sending signal TERM to command ‘gtime’
+P6_1_2.txt ;0.57 ;1.03 ;47668 ;47644
+P6_3_2.txt ;0.54 ;1.10 ;47688 ;47644
+P6_5_2.txt ;0.52 ;1.73 ;47540 ;47620
+P7_1_2.txt ;0.56 ;2.50 ;47696 ;47648
+P7_3_2.txt ;0.56 ;3.18 ;47696 ;47732
+P7_7_2.txt ;0.56 ;5.72 ;47688 ;47708
+P8_1_2.txt ;0.53 ;8.58 ;47532 ;47696
