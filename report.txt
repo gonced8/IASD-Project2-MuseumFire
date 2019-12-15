@@ -1,0 +1,53 @@
+Q1:
+The Bayesian network will represent both space and time connections. For the time connections, each of the rooms' names ends with @i where i represents the i-th time instant. Naturally, a room at a time instant i-1 is connected to the same room in the level below, at a time instant i, to ensure one of the characteristics the desired fire propagation model is implemented (if a room is on fire, it will continue on fire). Besides this connection, each room at time instant i-1, is connected to its spacial neighbours at time instant i, to ensure the other characteristic of the fire propagation model (if a room is on fire at time instant i-1, their adjacent rooms will catch fire with probability P at time instant i). Besides this, the Bayesian network will also incorporate the sensor network, as each room @i will be connected to its sensor, if available, @i, which will detect fire with the True and False positive rate provided.
+Since we do not know anything about the initial time instant, where the rooms may or may not be on fire, being this a binary problem, a 50% probability was implemented.
+An example scheme of the implemented Bayesian network is shown, where artificial and intelligence are 2 rooms, the second one being equipped with a sensor, seen at two time instants i=0 and i=1:
+
+             ______________      ________________
+            | artificial@0 |    | intelligence@0 |       ______
+            |______________|    |________________|----->| s1@0 |
+                    | \_______         / |              |______|
+                    |   ______\_______/  |        
+                    |  /       \_______  |
+                    | /                \ |
+             _______v_v____      ______v_v_______
+            | artificial@1 |    | intelligence@1 |       ______
+            |______________|    |________________|----->| s1@1 |
+                                                        |______|
+
+Q2:
+To compare the performance achieved with either one of the algorithms, a script was developed to measure the real execution time and the peak memory usage of each execution of the main.py script. A script using one of the two algorithms was executed for each public test, and another script using the other algorithm was executed for the same tests.
+The peak memory usage over time was seen to be approximately constant for each of the problem files and using either one of the two algorithms. This value is of around 48 MB. Since only the execution time changes, it was decided to use the Moodle platform with each one of the algorithms and compare the "Execution Time" in the "Comments" section in the "Submission View" tab. However, using the enumeration algorithm, the CPU time limit was exceeded in most cases so we will use the times obtained with the developed script to compare.
+The scripts are executed with a timeout value of 2 minutes.
+The format used to show the results is: (time in seconds and memory in KB)
+
+input_filename ;t_elim ;t_enum ;mem_elim ;mem_enum
+
+P3_1_2.txt  ;0.54 ;0.56 ;47616 ;47640
+P3_1_4.txt  ;0.58 ;0.81 ;47624 ;47648
+P3_1_8.txt  ;0.63 ;timeout ;47780 ;timeout
+P3_3_2.txt ;0.58 ;0.60 ;47652 ;47584
+P3_3_4.txt ;0.60 ;0.97 ;47600 ;47720
+P3_3_8.txt ;0.59 ;timeout ;47616 ;timeout
+P4_1_2.txt  ;0.55 ;0.59 ;47564 ;47528
+P4_1_4.txt  ;0.60 ;6.35 ;47616 ;47728
+P4_1_8.txt  ;0.60 ;timeout ;47604 ;timeout
+P4_3_2.txt ;0.56 ;0.53 ;47512 ;47668
+P4_3_4.txt ;0.54 ;10.58 ;47680 ;47732
+P5_1_2.txt  ;0.58 ;0.59 ;47616 ;47636
+P5_1_8.txt  ;0.64 ;timeout ;47680 ;timeout
+P5_3_2.txt ;0.67 ;0.60 ;47760 ;47580
+P5_3_4.txt ;0.59 ;timeout ;47668 ;timeout
+P5_5_2.txt ;0.57 ;0.70 ;47672 ;47572
+P5_5_4.txt ;0.55 ;timeout ;47660 ;timeout
+P6_1_2.txt  ;0.57 ;1.03 ;47668 ;47644
+P6_3_2.txt ;0.54 ;1.10 ;47688 ;47644
+P6_5_2.txt ;0.52 ;1.73 ;47540 ;47620
+P7_1_2.txt  ;0.56 ;2.50 ;47696 ;47648
+P7_3_2.txt ;0.56 ;3.18 ;47696 ;47732
+P7_7_2.txt  ;0.56 ;5.72 ;47688 ;47708
+P8_1_2.txt ;0.53 ;8.58 ;47532 ;47696
+
+As can be seen, using the enumeration_ask algorithm, some of the problems timed out while the ones that did not still took a longer time to reach the same result when compared to the elimination_ask algorithm.
+
+We can now calculate the time and memory usage increase (ratio between each two values) for each one of the files (lines in the data above) and compute the mean value of the increases in order to compare both algorithms. When there is a timeout, we consider a corresponding time equal to the timeout value, 2 minutes, and ignore the memory usage increase for that file. For the data above, the mean of the time increases using algorithm enumeration_ask compared to elimination_ask is of about 53.6 times, while the memory usage is approximately the same (1.0002 times higher).
